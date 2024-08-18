@@ -1,0 +1,85 @@
+*,
+::before,
+::after,
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: rgb(243, 243, 243); */
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, _300px)); */
+  /* color: black; */
+}
+.glass {
+  backdrop-filter: blur(2px);
+  animation: drop forwards 2s ease;
+}
+@keyframes drop {
+  0% {
+    transform: translateX(-150px) scaleX(4);
+  }
+}
+.menu {
+  backdrop-filter: blur(2px);
+  animation: menu forwards 2s ease;
+}
+@keyframes menu {
+  0% {
+    width: 0;
+    transform: translateX(500px);
+  }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .flex_center {
+    @apply flex justify-center text-center gap-2;
+  }
+}
+
+/* .open::before {
+  animation: openMenu forwards 1s;
+}
+.open::after {
+  animation: openMenus forwards 1s;
+}
+@keyframes openMenu {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+@keyframes openMenus {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}
+
+.close::before {
+  animation: closeMenu forwards 1.5s;
+}
+.close::after {
+  animation: closeMenu forwards 1s;
+}
+@keyframes closeMenu {
+  from {
+    left: 0;
+  }
+  to {
+    right: 0;
+  }
+} */
