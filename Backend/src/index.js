@@ -18,7 +18,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send({ Hello: "message" });
 });
-app.use(API_URL, router);
+app.use(`/${API_URL}`, router);
 
 app.use(err);
 app.use(errorhandle);
