@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon --env-file=.env src/index.js index.js",
-    "buildCommand": "next build"
+    "start": "node src/index.js index.js"
   },
   "keywords": [],
   "author": "",

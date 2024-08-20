@@ -26,6 +26,9 @@ app.use(errorhandle);
 app.listen(port, () => {
   console.log(`server running on Port: ${port}`);
 });
+// "start": "nodemon --env-file=.env src/index.js index.js",
+// "buildCommand": "next build"
+
 // git init
 // git add README.md
 // git commit -m "first commit"
