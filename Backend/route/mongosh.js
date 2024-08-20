@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
-const Connect = process.env.MONGODB_CONNECT;
+const MONGODB_CONNECT = process.env.MONGODB_CONNECT;
 
 mongoose
-  .connect(Connect)
+  .connect(MONGODB_CONNECT)
   .then(() => console.log("Mongodb Connected"))
   .catch((err) => {
     console.log("Not Connected");
