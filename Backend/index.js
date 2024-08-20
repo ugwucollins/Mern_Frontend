@@ -11,7 +11,13 @@ const port = process.env.PORT;
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://mern-project-gilt-eight.vercel.app/"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(logger);
 app.use(express.json());
 
