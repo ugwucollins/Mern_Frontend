@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node index.js",
-    "dev": "node index.js"
+    "test": "echo \"Error: no test specified\" && exist 1"
   },
   "keywords": [],
   "author": "",
