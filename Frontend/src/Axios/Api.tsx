@@ -1,10 +1,9 @@
 import axios from "axios";
 
-// const Url = import.meta.env.VITE_PORT_URL;
+// const Url = "https://mern-project-422f.vercel.app/api";
 
 const Api = axios.create({
-  baseURL: `${import.meta.env.VITE_PORT_URL}`,
-  // baseURL: `${Url}`,
+  baseURL: "https://mern-project-422f.vercel.app/api",
 });
 
 export default Api;
