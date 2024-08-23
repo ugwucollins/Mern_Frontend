@@ -1,5 +1,5 @@
 ///React routes and Imports
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FormEvent } from "react";
@@ -176,24 +176,8 @@ export default function App() {
         post.name.toLowerCase().includes(search.toLowerCase()) ||
         post.titles.toLowerCase().includes(search.toLowerCase())
     );
-    // if (posts.length !== 0) {
-    //   const filterPosts = posts.filter(
-    //     (post: any) =>
-    //       post.name.toLowerCase().includes(search.toLowerCase()) ||
-    //       post.titles.toLowerCase().includes(search.toLowerCase())
-    //   );
-    //   setsearchResult(filterPosts.reverse());
-    // } else {
-    //   <div className="flex flex-col justify-center capitalize text-center text-red-700 mt-[300px] font-medium text-2xl">
-    //     Your Blog is Empty Or Not Found
-    //     <Link
-    //       to={"/create"}
-    //       className="text-blue-600 font-normal cursor-pointer text-base"
-    //     >
-    //       Create One
-    //     </Link>
-    //   </div>;
-    // }
+    console.log(filterPosts);
+
     setsearchResult(filterPosts.reverse());
   }, [posts, search]);
 
